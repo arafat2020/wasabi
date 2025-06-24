@@ -7,7 +7,7 @@ from rest_framework.decorators import action
 
 
 class PostViewSet(viewsets.ModelViewSet):
-    queryset = Post.objects.all()
+    queryset = Post.objects.all().prefetch_related('votes')
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticated]
     
