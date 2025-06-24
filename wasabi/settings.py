@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'user',
     'drf_yasg',
     'post',
-    'vote'
+    'vote',
+    'comment'
 ]
 
 MIDDLEWARE = [
